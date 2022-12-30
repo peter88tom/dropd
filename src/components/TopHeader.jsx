@@ -1,3 +1,4 @@
+import dropd_logo from '../dropd_logo.png';
 import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from "solid-bootstrap";
 
 
@@ -7,7 +8,7 @@ function TopHeader(){
 	return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 	<Container>
 	<Navbar.Brand href="#home">
-		<img alt="" src={"src/assets/dropd_logo.png"} width="95" height="25" />
+		<img alt="DROPD" src={dropd_logo} width="95" height="25"/>
 	</Navbar.Brand>
 	<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 	<Navbar.Collapse id="responsive-navbar-nav">
