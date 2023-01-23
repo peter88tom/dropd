@@ -1,0 +1,42 @@
+/*
+https://start.solidjs.com/core-concepts/css-and-styling
+*/
+/* body{
+	background-image:linear-gradient(90deg, #5722ff 0, #8103ff 51%, #5722ff 100%);
+} */
+h1{
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	/* margin-top: 20px; */
+}
+.footer-container-color h5{
+	color: #ffff;
+}
+.footer-container-color p{
+	color: #ffff;
+}
+.footer-container-color a{
+	color: white;
+}
+.footer-container-color {
+	margin-top: 60px;
+	background-image:linear-gradient(90deg, #5722ff 0, #8103ff 51%, #5722ff 100%);
+	/* color: white; */
+}
+
+/* set padding top for container with the cards*/
+.container{
+	padding-top: 20px;
+}
+
+/* nav pills style  */
+.nav-pills .nav-link.active {
+	color: black;
+	background-color: white;
+	border-radius: 0.5rem 0.5rem 0 0;
+	font-weight: 600;
+	border-bottom: 2px solid #7d06ff;
+}
+      
+
+      

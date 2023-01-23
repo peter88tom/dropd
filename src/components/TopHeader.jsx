@@ -1,44 +1,55 @@
 import dropd_logo from '../dropd_logo.png';
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from "solid-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, InputGroup } from "solid-bootstrap";
 
 
 
 
 function TopHeader(){
-	return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-	<Container>
-	<Navbar.Brand href="#home">
+	return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+	<Container fluid>
+	<Navbar.Brand href="/">
 		<img alt="DROPD" src={dropd_logo} width="95" height="25"/>
 	</Navbar.Brand>
 	<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 	<Navbar.Collapse id="responsive-navbar-nav">
-	  {/* <Nav class="me-auto">
-	    <Nav.Link href="#features">Features</Nav.Link>
-	    <Nav.Link href="#pricing">Pricing</Nav.Link>
-	    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-	      <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-	      <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-	      <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-	      <NavDropdown.Divider />
-	      <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-	    </NavDropdown>
-	  </Nav> */}
-	  <Nav class="me-auto">
-		<Form class="d-flex">
+
+	  <Nav class="mx-auto" style={{width:"70%"}}>
+	  	
+		<Form class="container-fluid justify-content-start">
+			<InputGroup>
+			
 			<FormControl
 			type="search"
 			placeholder="Search"
-			class="me-2"
+			class="me-2 input-group"
 			aria-label="Search"
 			/>
-			<Button variant="outline-success">Search</Button>
-		</Form>
+			<InputGroup.Text id="basic-addon1"><i class="bi bi-search"></i></InputGroup.Text>
+			
+			</InputGroup>
+		</Form>	
+		
 	  </Nav>
+
+	  <br />
+	  <Nav class='me-3'>
+	    <Nav.Link href="#deets" class='btn  btn-sm btn-danger'>Go Live</Nav.Link>
+	  </Nav>
+          
+	  <br />
 	  <Nav>
-	    <Nav.Link href="#deets">Log Live</Nav.Link>
-	    <Nav.Link href="#signIn">Sign In</Nav.Link>
-	    <Nav.Link eventKey={2} href="#memes">Dank memes</Nav.Link>
+	    <Nav.Link href="#signIn" class='btn btn-sm btn-outline-primary'>Sign In</Nav.Link>
 	  </Nav>
+	  
+	  
+	  <Nav>
+	  	<Nav.Link><i class="bi bi-list" style={{'font-size': '1.5rem', color: 'cornflowerblue'}} ></i></Nav.Link>
+	  </Nav>
+
+	  <Nav>
+	    	<Nav.Link><i class="bi bi-cart" style={{'font-size': '1.5rem', color: 'cornflowerblue'}}></i></Nav.Link> 
+	  </Nav>
+	  
 	</Navbar.Collapse>
 	</Container>
       </Navbar>;
